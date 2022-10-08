@@ -1,0 +1,194 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="img/huellita.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    
+        <link rel="stylesheet" href="style.css">
+    
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+        <title> {% block titulo %} {% endblock %} </title>
+    </head>
+<body>
+    <!-- header -->
+    <div id="header-back-ground" class="">
+        <header class="py-3 mb-3 border-bottom">
+            <div class="container-fluid d-grid gap-3 align-items-center" style="grid-template-columns: 1fr 2fr;">
+              <div class="dropdown">
+                <img src="img/huellita.png" width="10%" alt="">
+                <img src="img/huellitaGato.jpg" width="10%" alt="">
+                <a href="{% url 'inicio' %}"><h6>Huellitas Shop</h6></a>
+                <!-- <a href="#" class="d-flex align-items-center col-lg-4 mb-2 mb-lg-0 link-dark text-decoration-none dropdown-toggle" id="dropdownNavLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+                <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownNavLink" style="">
+                  <li><a class="dropdown-item active" href="#" aria-current="page">Overview</a></li>
+                  <li><a class="dropdown-item" href="#">Inventory</a></li>
+                  <li><a class="dropdown-item" href="#">Customers</a></li>
+                  <li><a class="dropdown-item" href="#">Products</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Reports</a></li>
+                  <li><a class="dropdown-item" href="#">Analytics</a></li>
+                </ul> -->
+              </div>
+        
+              <div class="d-flex align-items-center">
+                <form class="w-100 me-3">
+                  <!-- <input type="search" class="form-control" placeholder="Search..." aria-label="Search"> -->
+                  <div class="mb-1" >
+                    <span>Envío Gratis por compras mayores a $ 80000</span>
+                  </div>
+                </form>
+        
+                <div class="flex-shrink-0 ">
+                    <div class="">
+                        <a href="{% url 'ingresar' %}"><button type="button" class="btn btn-outline-primary me-2">Ingresar</button></a>
+                        <a href="{% url 'registrar' %}"><button type="button" class="btn btn-primary">Registrarse</button></a>
+                      </div>
+                  <!-- <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false"> -->
+                    <!-- <img src="img/gatico.jpg" alt="mdo" width="32" height="32" class="rounded-circle"> -->
+                  <!-- </a> -->
+                 <!--  <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2" style="">
+                    <li><a class="dropdown-item" href="#">New project...</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                  </ul> -->
+                </div>
+              </div>
+            </div>
+        </header> 
+    </div>
+
+    {% block contenido %} {% endblock %}
+
+    <!-- footer  -->
+    <footer class="text-center text-white" style="background-color: #caced1;">
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!-- Section: Images -->
+          <section class="">
+            <div class="row">
+              <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                <div
+                  class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                  data-ripple-color="light"
+                >
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/new/fluid/city/113.webp"
+                    class="w-100"
+                  />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.2);"
+                    ></div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                <div
+                  class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                  data-ripple-color="light"
+                >
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/new/fluid/city/111.webp"
+                    class="w-100"
+                  />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.2);"
+                    ></div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                <div
+                  class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                  data-ripple-color="light"
+                >
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/new/fluid/city/112.webp"
+                    class="w-100"
+                  />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.2);"
+                    ></div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                <div
+                  class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                  data-ripple-color="light"
+                >
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/new/fluid/city/114.webp"
+                    class="w-100"
+                  />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.2);"
+                    ></div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                <div
+                  class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                  data-ripple-color="light"
+                >
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/new/fluid/city/115.webp"
+                    class="w-100"
+                  />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.2);"
+                    ></div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                <div
+                  class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                  data-ripple-color="light"
+                >
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/new/fluid/city/116.webp"
+                    class="w-100"
+                  />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.2);"
+                    ></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Section: Images -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2020 Copyright:
+          <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+</body>
+</html>

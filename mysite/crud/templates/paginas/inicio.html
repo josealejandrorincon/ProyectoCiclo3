@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+
+{% block titulo %} Sección de inicio :D {% endblock %}
+
+{% block contenido %} 
+<div id="body-index-back-ground">
+    <div class="container-fluid pb-3">
+        <div class="d-grid gap-3" style="grid-template-columns: 1fr 2fr;">
+          <div class="bg-light border rounded-3">
+            <!-- <br><br><br><br><br><br><br><br><br><br> -->
+            <!-- barra de navegacion -->
+            <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white" style="width: 380px;">
+                <a href="/" class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
+                  <svg class="bi me-2" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+                  <!-- <span class="fs-5 fw-semibold">List group</span> -->
+                  <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                </a>
+
+                
+                <div class="list-group list-group-flush border-bottom scrollarea">
+                  <a href="#" class="list-group-item list-group-item-action py-3 lh-tight" aria-current="true">
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                      <strong class="mb-1">Blog</strong>
+                      <small>Wed</small>
+                    </div>
+                    <div class="col-11 mb-1 small">Interactua, comenta y danos sugerencias!! 😅😃</div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                      <strong class="mb-1">Ofertas</strong>
+                      <small class="text-muted">Tues</small>
+                    </div>
+                    <div class="col-10 mb-1 small">Conoce nuestras mejores promociones y descuentos 🧐🤑.</div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                      <strong class="mb-1">Métodos de pago</strong>
+                      <small class="text-muted">Mon</small>
+                    </div>
+                    <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+                  </a>
+            
+                  <a href="#" class="list-group-item list-group-item-action py-3 lh-tight" aria-current="true">
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                      <strong class="mb-1">Novedades</strong>
+                      <small class="text-muted">Wed</small>
+                    </div>
+                    <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                      <strong class="mb-1">Eventos</strong>
+                      <small class="text-muted">Tues</small>
+                    </div>
+                    <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+                  </a>
+                  
+                </div>
+              </div>
+          </div>
+
+          <div class="bg-light border rounded-3" width="100%">
+            <div id="imgs-presentation" class="imgs-presentation">
+              <a class="container" style="padding-left: 60px;" id= "img" href="view/perros.html"><img class="imgs-presentation" src="img/gato.jpg" alt="" width="15%"></a>
+              <a class="container" style="padding-right: 10;" id= "img" href=""><img class="imgs-presentation" src="img/perro.webp" alt="" width="15%"></a>
+              <a class="container" style="padding-right: 10;" id= "img" href=""><img class="imgs-presentation" src="img/roedor.webp" alt="" width="15%"></a>
+              <a class="container" style="padding-right: 10;" id= "img" href=""><img class="imgs-presentation" src="img/ave.jpg" alt="" width="15%"></a>
+              <a class="container" style="padding-left: 10; padding-right: 25px;"id= "img" href=""><img class="imgs-presentation" src="img/pez.jfif" alt="" width="15%"></a>
+            </div>
+          <div>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/gato.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/perro.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/roedor.webp" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>  
+            
+            
+            
+            
+            <br><br><br>
+               <!--  <div class="bg-light border rounded-6">
+                     <a href="#" class="d-flex align-items-center col-lg-4 mb-2 mb-lg-0 link-dark text-decoration-none dropdown-toggle" id="dropdownNavLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                      </a> 
+                </div> -->
+            <br><br><br><br><br><br><br><br><br><br>
+          </div>
+        </div>
+      </div>
+</div>
+{% endblock %}
